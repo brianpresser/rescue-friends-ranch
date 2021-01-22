@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/rescue-friends-ranch/static/css/main.ede0a458.chunk.css",
+    "main.js": "/rescue-friends-ranch/static/js/main.9104e2a2.chunk.js",
+    "main.js.map": "/rescue-friends-ranch/static/js/main.9104e2a2.chunk.js.map",
+    "runtime-main.js": "/rescue-friends-ranch/static/js/runtime-main.04a2edcc.js",
+    "runtime-main.js.map": "/rescue-friends-ranch/static/js/runtime-main.04a2edcc.js.map",
+    "static/js/2.e8ef6e80.chunk.js": "/rescue-friends-ranch/static/js/2.e8ef6e80.chunk.js",
+    "static/js/2.e8ef6e80.chunk.js.map": "/rescue-friends-ranch/static/js/2.e8ef6e80.chunk.js.map",
+    "static/js/3.43080a70.chunk.js": "/rescue-friends-ranch/static/js/3.43080a70.chunk.js",
+    "static/js/3.43080a70.chunk.js.map": "/rescue-friends-ranch/static/js/3.43080a70.chunk.js.map",
+    "index.html": "/rescue-friends-ranch/index.html",
+    "static/css/main.ede0a458.chunk.css.map": "/rescue-friends-ranch/static/css/main.ede0a458.chunk.css.map",
+    "static/js/2.e8ef6e80.chunk.js.LICENSE.txt": "/rescue-friends-ranch/static/js/2.e8ef6e80.chunk.js.LICENSE.txt",
+    "static/media/dog-2.ecef312f.jpg": "/rescue-friends-ranch/static/media/dog-2.ecef312f.jpg",
+    "static/media/dog-3.8d3a01b9.jpg": "/rescue-friends-ranch/static/media/dog-3.8d3a01b9.jpg",
+    "static/media/dog-bowl.9f17eb90.png": "/rescue-friends-ranch/static/media/dog-bowl.9f17eb90.png",
+    "static/media/small-black-dog.7204b520.jpg": "/rescue-friends-ranch/static/media/small-black-dog.7204b520.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.04a2edcc.js",
+    "static/js/2.e8ef6e80.chunk.js",
+    "static/css/main.ede0a458.chunk.css",
+    "static/js/main.9104e2a2.chunk.js"
+  ]
+}
