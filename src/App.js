@@ -1,23 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import Demo from './topNav';
+import Demo2 from './List';
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Rescue Friends Ranch
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Demo></Demo>
+      <h2 
+        style={{
+          marginTop: '80px', 
+          marginBottom: '0', 
+          backgroundColor: '#F8F8F8', 
+          paddingTop: '15px', 
+          paddingBottom: '5px', 
+          boxShadow: '0 4px 2px -2px #DFDFDF',
+        }}>
+          <span style={{color: '#919191'}}>8 Matches..</span>
+      </h2>
+      <Demo2></Demo2>
+      {/* <FilterModal></FilterModal> */}
     </div>
   );
 }
