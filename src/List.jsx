@@ -180,7 +180,6 @@ export default function AlignItemsList() {
                   style={{
                     marginLeft: "110px",
                     marginTop: "-60px",
-                    fontSize: "30px",
                   }}
                 />
                 <div
@@ -189,27 +188,33 @@ export default function AlignItemsList() {
                     marginTop: "60px",
                     marginRight: "15px",
                     width: "85%",
-                    border: "2px solid #D8D8D8",
-                    borderRadius: "1Opx",
+                    // border: "2px solid #D8D8D8",
+                    // borderRadius: "1Opx",
                     padding: "8px",
                     height: "160px",
                     overflow: "none",
                   }}
                 >
-                  <DialogContentText
+                  <div>
+                    <span
+                      style={{
+                        fonstSize: "90px",
+                        fontFamily: "Trebuchet MS, sans-serif",
+                      }}
+                    >
+                      Benny
+                    </span>
+                  </div>
+                  {/* <DialogContentText
                     id="scroll-dialog-description"
                     ref={descriptionElementRef}
-                    tabIndex={-1}
-                  >
-                    <div>
-                      <span style={{ fonstSize: "10px" }}>Benny</span>
-                    </div>
-                    <div>Owner: Ali Connors</div>
-                    <div>Age: 13</div>
-                    <div>Breed: Doggo</div>
-                    <div>Weight: 50 lbs</div>
-                    <div>Diet: Meat</div>
-                  </DialogContentText>
+                    tabIndex={-1} */}
+                  <div>Owner: Ali Connors</div>
+                  <div>Age: 13</div>
+                  <div>Breed: Doggo</div>
+                  <div>Weight: 50 lbs</div>
+                  <div>Diet: Meat</div>
+                  {/* </DialogContentText> */}
                 </div>
               </div>
               <div
@@ -219,7 +224,7 @@ export default function AlignItemsList() {
                   marginRight: "15px",
                   width: "65%",
                   border: "2px solid #D8D8D8",
-                  borderRadius: "1Opx",
+                  borderRadius: "12px",
                   padding: "10px",
                   height: "155px",
                   overflow: "scroll",
@@ -258,7 +263,7 @@ export default function AlignItemsList() {
                 <div
                   style={{
                     marginLeft: "4px",
-                    marginRight: "9px",
+                    marginRight: "2px",
                     marginBottom: "30px",
                   }}
                 >
@@ -292,7 +297,7 @@ export default function AlignItemsList() {
                   src={fb}
                   style={{
                     marginLeft: "10px",
-                    marginRight: "6px",
+                    marginRight: "2px",
                     height: "25px",
                     width: "25px",
                   }}
