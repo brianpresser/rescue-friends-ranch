@@ -10,7 +10,7 @@ function App() {
       <Demo></Demo>
       <h2 
         style={{
-          marginTop: '80px', 
+          marginTop: '90px', 
           marginBottom: '0', 
           backgroundColor: '#F8F8F8', 
           paddingTop: '15px', 

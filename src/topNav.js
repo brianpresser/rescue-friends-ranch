@@ -443,7 +443,7 @@ export default function PrimarySearchAppBar() {
 
   return (
     <div className={classes.grow}>
-      <AppBar position="fixed" style={{backgroundColor: '#2e2e2e', height: '85px'}}>
+      <AppBar position="fixed" style={{backgroundColor: '#2e2e2e', height: '95px'}}>
         <Toolbar>
           <IconButton
             edge="start"
@@ -480,14 +480,14 @@ export default function PrimarySearchAppBar() {
               {/* </Badge> */}
             </IconButton>
             <IconButton 
-              aria-label='show 4 new mails'
+              // aria-label='show 4 new mails'
               color='inherit' 
               style={{marginTop: '15px'}}
               button
               divider
-              aria-haspopup='true'
-              aria-controls='ringtone-menu'
-              aria-label='phone ringtone'
+              // aria-haspopup='true'
+              // aria-controls='ringtone-menu'
+              // aria-label='phone ringtone'
               onClick={handleClickListItem}
               role='listitem'
             >
