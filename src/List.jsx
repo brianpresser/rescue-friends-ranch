@@ -33,6 +33,15 @@ const useStyles = makeStyles((theme) => ({
   inline: {
     display: "inline",
   },
+  typography: {
+    fontFamily: [
+      "Nunito",
+      "Roboto",
+      '"Helvetica Neue"',
+      "Arial",
+      "sans-serif",
+    ].join(","),
+  },
 }));
 
 export default function AlignItemsList() {
@@ -82,9 +91,12 @@ export default function AlignItemsList() {
               style={{
                 height: "150px",
                 width: "200px",
-                boxShadow: "0 0 7px  rgba(0,0,0,0.5)",
+                boxShadow: "0 0 3px  rgba(0,0,0,0.5)",
                 marginLeft: "10px",
                 marginBottom: "10px",
+                borderStyle: "solid",
+                borderWidth: "thin",
+                borderColor: "#A6A6A6",
               }}
             />
             <DialogContentText
@@ -92,7 +104,16 @@ export default function AlignItemsList() {
               ref={descriptionElementRef}
               tabIndex={-1}
             >
-              {[...new Array(20)].map(() => `info`).join("\n")}
+              {/* {[...new Array(20)].map(() => `info`).join("\n")} */}
+              <div style={{ marginLeft: "10px", marginTop: "30px" }}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </div>
             </DialogContentText>
           </DialogContent>
           <DialogActions>
@@ -162,64 +183,123 @@ export default function AlignItemsList() {
                   className={classes.rounded}
                   src={DogTwo}
                   style={{
-                    height: "160px",
-                    width: "240px",
-                    boxShadow: "0 0 7px  rgba(0,0,0,0.5)",
+                    height: "170px",
+                    width: "250px",
+                    boxShadow: "0 0 3px  rgba(0,0,0,0.5)",
                     marginLeft: "20px",
+                    borderStyle: "solid",
+                    borderWidth: "thin",
+                    borderColor: "#A6A6A6",
                   }}
                 />
               </ListItemAvatar>
               <div
                 style={{
-                  minWidth: "160px",
+                  minWidth: "190px",
                   marginRight: "10px",
                   overflow: "none",
                 }}
               >
-                <ListItemText
-                  style={{
-                    marginLeft: "110px",
-                    marginTop: "-60px",
-                  }}
-                />
                 <div
                   style={{
                     marginLeft: "20px",
-                    marginTop: "60px",
-                    marginRight: "15px",
+                    marginTop: "-37px",
+                    marginRight: "10px",
                     width: "85%",
                     // border: "2px solid #D8D8D8",
                     // borderRadius: "1Opx",
-                    padding: "8px",
+                    padding: "10px",
                     height: "160px",
                     overflow: "none",
                   }}
                 >
                   <div>
+                    <ListItemText
+                      disableTypography
+                      primary={
+                        <Typography
+                          style={{
+                            color: "#2D2D2D",
+                            fontSize: "30px",
+                            fontFamily: "Helvetica",
+                            fontWeight: "bold",
+                          }}
+                        >
+                          Benny
+                        </Typography>
+                      }
+                    />
+                  </div>
+                  <div style={{ marginLeft: "-80px", marginTop: "10px" }}>
+                    <Divider variant="inset" component="li" />
+                  </div>
+
+                  <div style={{ paddingTop: "10px" }}>
                     <span
                       style={{
-                        fonstSize: "90px",
-                        fontFamily: "Trebuchet MS, sans-serif",
+                        fontWeight: "bold",
+                        color: "#2D2D2D",
+                        fontFamily: "Helvetica",
                       }}
                     >
-                      Benny
+                      Owner:{" "}
                     </span>
+                    Jeff Jefferson
                   </div>
-                  {/* <DialogContentText
-                    id="scroll-dialog-description"
-                    ref={descriptionElementRef}
-                    tabIndex={-1} */}
-                  <div>Owner: Ali Connors</div>
-                  <div>Age: 13</div>
-                  <div>Breed: Doggo</div>
-                  <div>Weight: 50 lbs</div>
-                  <div>Diet: Meat</div>
+                  <div style={{ paddingTop: "5px" }}>
+                    <span
+                      style={{
+                        fontWeight: "bold",
+                        color: "#2D2D2D",
+                        fontFamily: "Helvetica",
+                      }}
+                    >
+                      Age:{" "}
+                    </span>
+                    13
+                  </div>
+                  <div style={{ paddingTop: "5px" }}>
+                    <span
+                      style={{
+                        fontWeight: "bold",
+                        color: "#2D2D2D",
+                        fontFamily: "Helvetica",
+                      }}
+                    >
+                      Breed:{" "}
+                    </span>
+                    Doggo
+                  </div>
+                  <div style={{ paddingTop: "5px" }}>
+                    <span
+                      style={{
+                        fontWeight: "bold",
+                        color: "#2D2D2D",
+                        fontFamily: "Helvetica",
+                      }}
+                    >
+                      Weight:{" "}
+                    </span>
+                    50 lbs
+                  </div>
+                  <div style={{ paddingTop: "5px" }}>
+                    <span
+                      style={{
+                        fontWeight: "bold",
+                        color: "#2D2D2D",
+                        fontFamily: "Helvetica",
+                      }}
+                    >
+                      Diet:{" "}
+                    </span>
+                    Meat
+                  </div>
                   {/* </DialogContentText> */}
                 </div>
               </div>
               <div
                 style={{
-                  marginLeft: "20px",
+                  marginLeft: "10px",
                   marginTop: "-1px",
                   marginRight: "15px",
                   width: "65%",
@@ -269,7 +349,7 @@ export default function AlignItemsList() {
                 >
                   <Button
                     variant="outlined"
-                    color="primary"
+                    color="default"
                     onClick={handleClickOpen}
                     style={{
                       marginTop: "-30px",
@@ -281,7 +361,7 @@ export default function AlignItemsList() {
                   </Button>
                   <Button
                     variant="outlined"
-                    color="primary"
+                    color="default"
                     onClick={handleClickOpen}
                     style={{
                       marginTop: "30px",
@@ -296,8 +376,8 @@ export default function AlignItemsList() {
                   alt=""
                   src={fb}
                   style={{
-                    marginLeft: "10px",
-                    marginRight: "2px",
+                    marginLeft: "6px",
+                    marginRight: "9px",
                     height: "25px",
                     width: "25px",
                   }}

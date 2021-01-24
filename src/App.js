@@ -17,7 +17,7 @@ function App() {
           paddingBottom: '5px', 
           boxShadow: '0 4px 2px -2px #DFDFDF',
         }}>
-          <span style={{color: '#919191'}}>8 Matches..</span>
+          <span style={{color: '#919191'}}>8 Matches Found..</span>
       </h2>
       <Demo2></Demo2>
       {/* <FilterModal></FilterModal> */}

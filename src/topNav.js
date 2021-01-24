@@ -191,24 +191,24 @@ function ConfirmationDialogRaw(props) {
         </RadioGroup> */}
    <div className={classes.root}>
      <div>
-      <HomeWorkIcon />
-      <LocalHospitalIcon style={{marginLeft: '375px'}}/>
+      <HomeWorkIcon style={{marginLeft: '20px'}}/>
+      <LocalHospitalIcon style={{marginLeft: '345px'}}/>
     </div>
-   <div style={{float: 'left', marginTop: '15px'}}>
+   <div style={{float: 'left', marginTop: '15px', marginLeft: '20px'}}>
       <FormControl component="fieldset" className={classes.formControl}>
         <FormLabel component="legend"></FormLabel>
         <FormGroup>
           <FormControlLabel
             control={<Checkbox checked={gilad} onChange={handleChange} name="gilad" />}
-            label="Gilad Gray"
+            label="Option One"
           />
           <FormControlLabel
             control={<Checkbox checked={jason} onChange={handleChange} name="jason" />}
-            label="Jason Killian"
+            label="Option Two"
           />
           <FormControlLabel
             control={<Checkbox checked={antoine} onChange={handleChange} name="antoine" />}
-            label="Antoine Llorca"
+            label="Option Three"
           />
         </FormGroup>
       </FormControl>
@@ -219,15 +219,15 @@ function ConfirmationDialogRaw(props) {
         <FormGroup>
           <FormControlLabel
             control={<Checkbox checked={gilad} onChange={handleChange} name="gilad" />}
-            label="Gilad Gray"
+            label="Option Four"
           />
           <FormControlLabel
             control={<Checkbox checked={jason} onChange={handleChange} name="jason" />}
-            label="Jason Killian"
+            label="Option Five"
           />
           <FormControlLabel
             control={<Checkbox checked={antoine} onChange={handleChange} name="antoine" />}
-            label="Antoine Llorca"
+            label="Option Six"
           />
         </FormGroup>
       </FormControl>
@@ -239,22 +239,22 @@ function ConfirmationDialogRaw(props) {
         <FormGroup>
           <FormControlLabel
             control={<Checkbox checked={gilad} onChange={handleChange} name="gilad" />}
-            label="Gilad Gray"
+            label="Option One"
           />
           <FormControlLabel
             control={<Checkbox checked={jason} onChange={handleChange} name="jason" />}
-            label="Jason Killian"
+            label="Option Two"
           />
           <FormControlLabel
             control={<Checkbox checked={antoine} onChange={handleChange} name="antoine" />}
-            label="Antoine Llorca"
+            label="More Options..."
           />
         </FormGroup>
       </FormControl>
       </div>
     <div>
 
-   <div style={{merginLeft: '10px', float: 'left', marginTop: '42px'}}>
+   <div style={{merginLeft: '10px', float: 'left', marginTop: '42px', marginLeft: '20px'}}>
      <div>
        <DriveEtaIcon />
      </div>
@@ -264,15 +264,15 @@ function ConfirmationDialogRaw(props) {
         <FormGroup>
           <FormControlLabel
             control={<Checkbox checked={gilad} onChange={handleChange} name="gilad" />}
-            label="Gilad Gray"
+            label="Option One"
           />
           <FormControlLabel
             control={<Checkbox checked={jason} onChange={handleChange} name="jason" />}
-            label="Jason Killian"
+            label="Option Two"
           />
           <FormControlLabel
             control={<Checkbox checked={antoine} onChange={handleChange} name="antoine" />}
-            label="Antoine Llorca"
+            label="Option Three"
           />
         </FormGroup>
       </FormControl>
@@ -284,15 +284,15 @@ function ConfirmationDialogRaw(props) {
         <FormGroup>
           <FormControlLabel
             control={<Checkbox checked={gilad} onChange={handleChange} name="gilad" />}
-            label="Gilad Gray"
+            label="Option Four"
           />
           <FormControlLabel
             control={<Checkbox checked={jason} onChange={handleChange} name="jason" />}
-            label="Jason Killian"
+            label="Option Five"
           />
           <FormControlLabel
             control={<Checkbox checked={antoine} onChange={handleChange} name="antoine" />}
-            label="Antoine Llorca"
+            label="Option Six"
           />
         </FormGroup>
       </FormControl>
@@ -306,15 +306,15 @@ function ConfirmationDialogRaw(props) {
         <FormGroup>
           <FormControlLabel
             control={<Checkbox checked={gilad} onChange={handleChange} name="gilad" />}
-            label="Gilad Gray"
+            label="Option One"
           />
           <FormControlLabel
             control={<Checkbox checked={jason} onChange={handleChange} name="jason" />}
-            label="Jason Killian"
+            label="Optio Two"
           />
           <FormControlLabel
             control={<Checkbox checked={antoine} onChange={handleChange} name="antoine" />}
-            label="Antoine Llorca"
+            label="More Options..."
           />
         </FormGroup>
       </FormControl>
@@ -322,10 +322,6 @@ function ConfirmationDialogRaw(props) {
       </div>
     </div>
 
-
-
-
-    
       </DialogContent>
       <DialogActions>
         <Button autoFocus onClick={handleCancel} color="primary">
@@ -387,12 +383,13 @@ export default function PrimarySearchAppBar() {
   const renderMenu = (
     <Menu
       anchorEl={anchorEl}
-      anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
+      // anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
       id={menuId}
       keepMounted
-      transformOrigin={{ vertical: 'top', horizontal: 'right' }}
+      // transformOrigin={{ vertical: 'top', horizontal: 'right' }}
       open={isMenuOpen}
       onClose={handleMenuClose}
+      style={{marginTop: '60px'}}
     >
       <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
       <MenuItem onClick={handleMenuClose}>Account Info</MenuItem>
@@ -443,7 +440,7 @@ export default function PrimarySearchAppBar() {
 
   return (
     <div className={classes.grow}>
-      <AppBar position="fixed" style={{backgroundColor: '#2e2e2e', height: '95px'}}>
+      <AppBar position="fixed" style={{backgroundColor: '#2D2D2D', height: '90px'}}>
         <Toolbar>
           <IconButton
             edge="start"
