@@ -10,14 +10,14 @@ function App() {
       <Demo></Demo>
       <h2 
         style={{
-          marginTop: '90px', 
+          marginTop: '100px', 
           marginBottom: '0', 
           backgroundColor: '#F8F8F8', 
           paddingTop: '15px', 
           paddingBottom: '5px', 
           boxShadow: '0 4px 2px -2px #DFDFDF',
         }}>
-          <span style={{color: '#919191'}}>8 Matches Found..</span>
+          <span style={{color: '#919191'}}>6 Matches Found..</span>
       </h2>
       <Demo2></Demo2>
       {/* <FilterModal></FilterModal> */}
